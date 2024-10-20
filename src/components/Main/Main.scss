@@ -1,0 +1,35 @@
+@mixin fonte() {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  background-image: url("/palacio.png");
+  width: 100vw;
+  height: 100vh;
+  background-color: #1d1b5a;
+  background-size: contain;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+p {
+  @include fonte();
+  font-size: 3rem;
+  color: white;
+  margin: 2% 0;
+}
+
+img {
+  width: 25vw;
+  max-width: 25vw;
+}
+
+button {
+  @include fonte();
+}
