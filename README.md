@@ -21,4 +21,4 @@ Um pequeno desafio que visa demonstrar as habilidades em React com alguns concei
 - A página foi criada e estilizada utilizando o React e estilizada com Sass.
 - O projeto foi devidamente versionado no GitHub e feito depploy no Vercel.
 
-> Link do Vercel: [https://letterboxd.com/film/let-the-right-one-in/](https://letterboxd.com/film/let-the-right-one-in/)
+> Link do Vercel: [_https://desafio-genio-do-react-vnw.vercel.app/_](https://desafio-genio-do-react-vnw.vercel.app/)
