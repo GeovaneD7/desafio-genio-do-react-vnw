@@ -1,7 +1,6 @@
 @mixin fonte() {
   font-family: "Sevillana", cursive;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 300;
   color: white;
 }
 
@@ -10,7 +9,7 @@ main {
   width: 100vw;
   height: 100vh;
   background-color: #1d1b5a;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -20,11 +19,23 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
+  @media (max-width:440px) {
+    justify-content: space-around;
+  }
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
 }
 
 p {
   @include fonte();
-  font-size: 3rem;
+  font-size: 4rem;
   
   @media (max-width: 440px) {
     font-size: 1.5rem;
@@ -35,7 +46,7 @@ p {
 img {
   max-height: 65vh;
   @media (max-width: 440px) {
-    max-width: 90vw;
+    height: 400px;
   }
 }
 
@@ -43,12 +54,14 @@ button {
   @include fonte();
 
   font-size: 2rem;
-  padding: 0.5% 5%;
+  padding: 15px 100px;
   background: #007BFF;
   border-radius: 50px;
   border-style: none;
   
   @media (max-width: 440px) {
+    font-size: 1.5rem;
+    padding: 10px 20px;
     background: #B74794;
   }
 }

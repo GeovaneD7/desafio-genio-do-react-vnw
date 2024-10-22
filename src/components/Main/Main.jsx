@@ -9,11 +9,13 @@ export default function Main() {
     <main>
       <section>
         <p>"Liberte a magia da programação com a lâmpada de Aladim."</p>
-        <img
-          src={lampada ? "genio.png" : "lampadaMagica.png"}
-          alt="Lâmpada Mágica"
-        />
-        <button onClick={trocarLampada}>Clique Aqui</button>
+        <div>
+          <img
+            src={lampada ? "genio.png" : "lampadaMagica.png"}
+            alt="Lâmpada Mágica"
+          />
+          <button onClick={trocarLampada}>Clique Aqui</button>
+        </div>
       </section>
     </main>
   );
