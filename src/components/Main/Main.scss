@@ -26,11 +26,17 @@ p {
   @include fonte();
   font-size: 3rem;
   
+  @media (max-width: 440px) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 
 img {
-  width: 25vw;
-  max-width: 25vw;
+  max-height: 65vh;
+  @media (max-width: 440px) {
+    max-width: 90vw;
+  }
 }
 
 button {
@@ -41,4 +47,8 @@ button {
   background: #007BFF;
   border-radius: 50px;
   border-style: none;
+  
+  @media (max-width: 440px) {
+    background: #B74794;
+  }
 }
